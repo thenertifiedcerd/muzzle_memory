@@ -10,8 +10,8 @@
         body {
             font-family: 'Arial', sans-serif;
             text-align: center;
-            background-color: #ffe6e6;
-            color: #ff4d4d;
+            background-color: #ffffff;
+            color: rgb(79, 157, 143);
             margin: 0;
             padding: 0;
         }
@@ -19,19 +19,20 @@
             margin-top: 20%;
         }
 
-            .blend {
-            width: 100%;
-            height: 500px;
-            background-image: url('/workspaces/val/inversion.png');
+        .blend {
+            width: 100vw;
+            height: 100vh;
+            background-image: url('inversion.png');
             background-color: rgb(79, 157, 143); /* Red color with 50% opacity */
             background-blend-mode: multiply; /* Blend mode */
             background-size: cover;
             background-position: center;
+            backdrop-filter: blur(10px);
         }
 
         .classic {
             border: none;
-            color: #cc0000;
+            color: rgb(79, 157, 143);
             background-color: transparent;
         }
 
@@ -40,7 +41,7 @@
         }
 
         .opt1 {
-            background-color: #ff4d4d;
+            background-color: rgb(79, 157, 143);
             color: white;
             padding: 10px 20px;
             border: none;
@@ -51,7 +52,7 @@
         }
 
         button:active {
-            background-color: #cc0000;
+            background-color: rgb(79, 157, 143);
             color: #ffffff;
         }
 
@@ -61,8 +62,8 @@
         }
 
         .opt2 {
-         color: #ff4d4d;
-         border: 1px solid #ff4d4d;
+         color: rgb(79, 157, 143);
+         border: 1px solid rgb(79, 157, 143);
          background-color: transparent;
          padding: 10px 20px;
          border-radius: 10px;
@@ -72,14 +73,16 @@
 
         .opt2 a {
             text-decoration: none;
-            color: #ff4d4d;
+            color: rgb(79, 157, 143);
         }
 
         .btn-group {
-         width: 2.5rem;
-         justify-content: space-between;
+         width: 3rem;
         }
         
+        .btn-group :first-child {
+         margin-right: auto;
+        }
     </style>
 </head>
 <body>
